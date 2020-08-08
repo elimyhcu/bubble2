@@ -3,7 +3,6 @@ import * as React from 'react';
 import { View, Text, Modal, Button, StyleSheet, TextInput } from 'react-native';
 import ReviewForm from'./screens/reviewForm';
 import config from './src/config';
-import * as firebase from 'firebase';
 
 class App extends React.Component {\
   constructor(props) {
@@ -11,9 +10,7 @@ class App extends React.Component {\
     this.state = {
       isLoadingComplete: false,
     }
-//initialize firebase
-    if (!firebase.apps.length) { firebase.initializeApp(firebaseConfig);}
-  }
+
   constructor()
   {
     super();
